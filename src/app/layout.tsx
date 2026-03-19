@@ -18,12 +18,13 @@ export const metadata: Metadata = {
 		template: "%s | DKU CS Club",
 		default: "DKU Computer Science Club",
 	},
-	description: "DKU CS Club Website",
+	description: "DKU Computer Science Club",
 	openGraph: {
-		title: "My Portfolio",
-		description: "DKU CS Club Website",
-		url: "dkucompsci.org",
-		siteName: "My Portfolio",
+		title: "DKU Computer Science Club",
+		description:
+			"Official website for DKU's one and only Computer Science Club.",
+		url: "dkucs.com",
+		siteName: "DKU Computer Science Club",
 		locale: "en_US",
 		type: "website",
 	},
@@ -62,16 +63,16 @@ export default function RootLayout({
 					fontCode.variable,
 				)}
 			>
-			<ThemeProvider
-				attribute="class"
-				defaultTheme="system"
-				enableSystem
-				disableTransitionOnChange
-			>
-				<App>{children}</App>
-				<Analytics />
-			</ThemeProvider>
-		</body>
-	</html>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="system"
+					enableSystem
+					disableTransitionOnChange
+				>
+					<App>{children}</App>
+					<Analytics />
+				</ThemeProvider>
+			</body>
+		</html>
 	);
 }

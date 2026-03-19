@@ -34,7 +34,8 @@ const clubMembers = [
     email: "ys477 [at] duke.edu",
     linkedin: "http://www.linkedin.com/in/yushan-sun-487b69385",
     picture: "/team/kimberly.jpg",
-  },{
+  },
+  {
     name: "Kurtis Kwan",
     role: "Secretary II",
     major: "Applied Math and Computer Science",
@@ -50,8 +51,8 @@ const clubMembers = [
     linkedin: "https://www.linkedin.com/in/艺琛-吴-46682a373/",
     picture: "/team/elaine.jpg",
   },
-  
-   {
+
+  {
     name: "Temuulen Enkhtamir",
     role: "Director of Operations II",
     major: "Applied Math and Computer Science",
