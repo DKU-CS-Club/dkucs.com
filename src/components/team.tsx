@@ -108,7 +108,7 @@ const clubMembers = [
 		major: "",
 		email: "",
 		linkedin: "",
-		picture: "/team/no.png",
+		picture: "/team/tianrui.jpg",
 	},
 	{
 		name: "Bilguun Dugarsuren",
