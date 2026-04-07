@@ -22,7 +22,7 @@ const clubMembers = [
 	{
 		name: "Avidikhuu Altangerel",
 		role: "Treasurer",
-		major: "Computer Science",
+		major: "Applied Math and Computer Science",
 		email: "aa846 [at] duke.edu",
 		linkedin: "https://www.linkedin.com/in/avidikhuu/",
 		picture: "/team/avidi.png",
@@ -113,7 +113,7 @@ const clubMembers = [
 	{
 		name: "Bilguun Dugarsuren",
 		role: "Member",
-		major: "",
+		major: "Applied Mathematics and Computational Sciences / Computer Science",
 		email: "",
 		linkedin: "",
 		picture: "/team/billy.png",
@@ -121,7 +121,7 @@ const clubMembers = [
 	{
 		name: "Nemuulen Togtbaatar",
 		role: "Member",
-		major: "",
+		major: "Computation and Design / Computer Science",
 		email: "",
 		linkedin: "",
 		picture: "/team/nemka.jpg",
@@ -129,10 +129,10 @@ const clubMembers = [
 	{
 		name: "Xinrong Sun",
 		role: "Member",
-		major: "",
+		major: "Mathematics and Computer Science (Math) (intended)",
 		email: "",
 		linkedin: "",
-		picture: "/team/no.png",
+		picture: "/team/sunny.jpg",
 	},
 	{
 		name: "Shaorong Xu",
@@ -180,7 +180,7 @@ const clubMembers = [
 		major: "",
 		email: "",
 		linkedin: "",
-		picture: "/team/no.png",
+		picture: "/team/yuxuan.png",
 	},
 	{
 		name: "Sardor Akhmedjanov",
