@@ -105,9 +105,9 @@ const clubMembers = [
 	{
 		name: "Tianrui Gu",
 		role: "Member",
-		major: "",
-		email: "",
-		linkedin: "",
+		major: "Applied Math and Computer Science",
+		email: "tg297@duke.edu",
+		linkedin: "www.linkedin.com/in/天睿-顾-744428405",
 		picture: "/team/tianrui.jpg",
 	},
 	{
