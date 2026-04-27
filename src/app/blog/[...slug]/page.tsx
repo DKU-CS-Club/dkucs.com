@@ -9,99 +9,95 @@ import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 
 interface BlogPageItemProps {
-  params: Promise<{
-    slug: string[];
-  }>;
+	params: Promise<{
+		slug: string[];
+	}>;
 }
 
 async function getBlogFromParams(params: Awaited<BlogPageItemProps["params"]>) {
-  const slug = params?.slug?.join("/");
-  const blog = allBlogs.find((blog) => blog.slugAsParams === slug);
+	const slug = params?.slug?.join("/");
+	const blog = allBlogs.find((blog) => blog.slugAsParams === slug);
 
-  if (!blog) {
-    return null;
-  }
+	if (!blog) {
+		return null;
+	}
 
-  return blog;
+	return blog;
 }
 
 export async function generateMetadata({
-  params,
+	params,
 }: BlogPageItemProps): Promise<Metadata> {
-  const resolvedParams = await params;
-  const blog = await getBlogFromParams(resolvedParams);
+	const resolvedParams = await params;
+	const blog = await getBlogFromParams(resolvedParams);
 
-  if (!blog) {
-    return {};
-  }
+	if (!blog) {
+		return {};
+	}
 
-  return {
-    title: blog.title,
-    description: blog.description,
-    authors: {
-      name: blog.author,
-    },
-  };
+	return {
+		title: blog.title,
+		description: blog.description,
+		authors: {
+			name: blog.author,
+		},
+	};
 }
 
 export async function generateStaticParams(): Promise<
-  Array<{ slug: string[] }>
+	Array<{ slug: string[] }>
 > {
-  return allBlogs.map((blog) => ({
-    slug: blog.slugAsParams.split("/"),
-  }));
+	return allBlogs.map((blog) => ({
+		slug: blog.slugAsParams.split("/"),
+	}));
 }
 
 export default async function BlogPageItem({ params }: BlogPageItemProps) {
-  const resolvedParams = await params;
-  const blog = await getBlogFromParams(resolvedParams);
+	const resolvedParams = await params;
+	const blog = await getBlogFromParams(resolvedParams);
 
-  if (!blog) {
-    return null;
-  }
+	if (!blog) {
+		return null;
+	}
 
-  return (
-    <article className="container relative max-w-3xl  py-6 lg:py-10">
-      <div>
-      {/* {blog.image && (
-        <Image
-          src={blog.image}
-          alt={blog.title}
-          width={900}
-          height={300}
-          priority
-          className="my-8 border bg-muted transition-colors"
-          style={{
-            maxWidth: "100%",
-            height: "auto"
-          }} />
-      )} */}
+	return (
+		<article className="container relative max-w-3xl  py-6 lg:py-10 border sm:px-10 border-neutral-400/20">
+			<div>
+				<div className="bg-gradient-to-r bg-from-rose-900 bg-to-neutral-900">
+					<Link
+						href="/blog"
+						className={
+							cn(buttonVariants({ variant: "ghost" })) + " font-mono px-0"
+						}
+					>
+						<ChevronLeft className="size-6" />
+					</Link>
+					<h1 className="text-center mb-2 text-4xl pb-3 font-extralight capitalize leading-tight tracking-tighter text-primary lg:text-6xl">
+						{blog.title}
+						<div />
+					</h1>
+					{blog.date && (
+						<time
+							dateTime={blog.date}
+							className="block text-sm text-muted-foreground mb-4"
+						>
+							Published on {formatDate(blog.date)}
+						</time>
+					)}
+				</div>
 
-        <h1 className="mt-12 mb-2inline-block text-4xl pb-3 font-bold capitalize leading-tight text-primary lg:text-5xl">
-          {blog.title}
-        </h1>
-        {blog.date && (
-          <time
-            dateTime={blog.date}
-            className="block text-sm text-muted-foreground mb-4"
-          >
-            Published on {formatDate(blog.date)}
-          </time>
-        )}
-
-        
-        <Mdx code={blog.body} />
-        <hr className="mt-12" />
-        <div className="flex justify-center py-6 lg:py-10">
-          <Link
-            href="/blog"
-            className={cn(buttonVariants({ variant: "ghost" }))}
-          >
-            <ChevronLeft className="mr-2 size-4" />
-            See all Blogs
-          </Link>
-        </div>
-      </div>
-    </article>
-  );
+				<Mdx code={blog.body} />
+				<hr className="mt-12" />
+				<div className="flex justify-center py-6 lg:py-10">
+					<Link
+						href="/blog"
+						className={cn(buttonVariants({ variant: "ghost" }))}
+					>
+						<ChevronLeft className="mr-2 size-4" />
+						See all Blogs
+					</Link>
+				</div>
+			</div>
+		</article>
+	);
 }
