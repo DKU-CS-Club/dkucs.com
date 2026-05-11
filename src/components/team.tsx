@@ -4,6 +4,38 @@
 
 const clubMembers = [
 	{
+		name: "Tianrui Gu",
+		role: "President",
+		major: "Applied Math and Computer Science",
+		email: "tg297@duke.edu",
+		linkedin: "www.linkedin.com/in/天睿-顾-744428405",
+		picture: "/team/tianrui.jpg",
+	},
+	{
+		name: "Kurtis Kwan",
+		role: "Vice President",
+		major: "Applied Math and Computer Science",
+		email: "kurtis.kwan [at] duke.edu",
+		linkedin: "https://www.linkedin.com/in/kurtis-kwan/",
+		picture: "/team/kurtis.jpeg",
+	},
+	{
+		name: "Yichen (Eason) Shen",
+		role: "Director of Operation",
+		major: "",
+		email: "",
+		linkedin: "",
+		picture: "/team/eason.jpg",
+	},
+	{
+		name: "Wenxin Xu",
+		role: "Treasurer",
+		major: "",
+		email: "",
+		linkedin: "",
+		picture: "/team/no.png",
+	},
+	{
 		name: "Anar Nyambayar",
 		role: "President",
 		major: "Applied Math and Computer Science",
@@ -34,14 +66,6 @@ const clubMembers = [
 		email: "ys477 [at] duke.edu",
 		linkedin: "http://www.linkedin.com/in/yushan-sun-487b69385",
 		picture: "/team/kimberly.jpg",
-	},
-	{
-		name: "Kurtis Kwan",
-		role: "Secretary II",
-		major: "Applied Math and Computer Science",
-		email: "kurtis.kwan [at] duke.edu",
-		linkedin: "https://www.linkedin.com/in/kurtis-kwan/",
-		picture: "/team/kurtis.jpeg",
 	},
 	{
 		name: "Yichen (Elaine) Wu",
@@ -103,14 +127,6 @@ const clubMembers = [
 		picture: "/team/hank.jpg",
 	},
 	{
-		name: "Tianrui Gu",
-		role: "Member",
-		major: "Applied Math and Computer Science",
-		email: "tg297@duke.edu",
-		linkedin: "www.linkedin.com/in/天睿-顾-744428405",
-		picture: "/team/tianrui.jpg",
-	},
-	{
 		name: "Bilguun Dugarsuren",
 		role: "Member",
 		major: "Applied Mathematics and Computational Sciences / Computer Science",
@@ -143,14 +159,6 @@ const clubMembers = [
 		picture: "/team/no.png",
 	},
 	{
-		name: "Wenxin Xu",
-		role: "Member",
-		major: "",
-		email: "",
-		linkedin: "",
-		picture: "/team/no.png",
-	},
-	{
 		name: "Munish Lohani",
 		role: "Member",
 		major: "",
@@ -165,14 +173,6 @@ const clubMembers = [
 		email: "",
 		linkedin: "",
 		picture: "/team/chinguun.jpg",
-	},
-	{
-		name: "Yichen (Eason) Shen",
-		role: "Member",
-		major: "",
-		email: "",
-		linkedin: "",
-		picture: "/team/eason.jpg",
 	},
 	{
 		name: "Yuxuan Liu",
