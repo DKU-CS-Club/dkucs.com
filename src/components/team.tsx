@@ -183,6 +183,14 @@ const clubMembers = [
 		picture: "/team/yuxuan.png",
 	},
 	{
+		name: "Jafarbek Ulmasov",
+		role: "Founder, Alum",
+		major: "Data Science",
+		email: "",
+		linkedin: "https://www.linkedin.com/in/ulmasovjafarbek/",
+		picture: "/team/no.png", // TODO: replace with Jafarbek's LinkedIn avatar
+	},
+	{
 		name: "Sardor Akhmedjanov",
 		role: "Alum",
 		major: "Data Science",

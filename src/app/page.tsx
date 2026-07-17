@@ -1,5 +1,6 @@
 // import Splash from "@/components/splash";
 import Socials from "@/components/socials";
+import { History } from "@/components/history";
 import { TeamBanner } from "@/components/teambanner";
 // import { buttonVariants } from "@/components/ui/button";
 // import { siteConfig } from "@/config/site";
@@ -26,6 +27,7 @@ export default function Home() {
             pool of multidisciplinary talents, share ideas, and foster
             innovation that goes beyond the classroom.
           </p>
+          <History />
           <div className="flex w-full max-w-2xl flex-col items-start gap-4 text-left sm:text-left">
             <header className="text-3xl font-extrabold text-left mt-10">
               <Socials />
