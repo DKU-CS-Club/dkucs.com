@@ -111,7 +111,7 @@ const clubMembers = [
 	},
 	{
 		name: "Guangzhi (Allen) Su",
-		role: "Student Advisor, Co-Founder",
+		role: "Co-Founder, Student Advisor",
 		major: "Computer Science",
 		email: "gs285 [at] duke.edu",
 		linkedin:
@@ -184,15 +184,15 @@ const clubMembers = [
 	},
 	{
 		name: "Jafarbek Ulmasov",
-		role: "Founder, Alum",
+		role: "Co-Founder, Alum",
 		major: "Data Science",
 		email: "",
 		linkedin: "https://www.linkedin.com/in/ulmasovjafarbek/",
 		picture: "/team/no.png", // TODO: replace with Jafarbek's LinkedIn avatar
 	},
 	{
-		name: "Sardor Akhmedjanov",
-		role: "Alum",
+		name: "Sardor Akhmedjonov",
+		role: "Co-Founder, Alum",
 		major: "Data Science",
 		email: "sa524v [at] duke.edu",
 		linkedin: "https://www.linkedin.com/in/sardorakhmedjonov",
