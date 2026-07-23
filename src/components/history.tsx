@@ -49,6 +49,13 @@ const clubHistory: Milestone[] = [
         linkedin: "https://www.linkedin.com/in/ulmasovjafarbek/",
         picture: "/team/no.png",
       },
+      {
+        name: "Guangzhi (Allen) Su",
+        role: "Co-Founder",
+        linkedin:
+          "https://www.linkedin.com/in/allen-guangzhi-su-%E8%8B%8F%E5%B9%BF%E6%99%BA-613070244/?originalSubdomain=cn",
+        picture: "/team/allen.png",
+      },
     ],
   },
   {
