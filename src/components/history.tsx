@@ -25,7 +25,7 @@ const founders: Person[] = [
     name: "Jafarbek Ulmasov",
     role: "Co-Founder",
     linkedin: "https://www.linkedin.com/in/ulmasovjafarbek/",
-    picture: "/team/no.png",
+    picture: "/team/jafar.jpg",
   },
   {
     name: "Sardor Akhmedjonov",
@@ -46,7 +46,7 @@ const clubHistory: Milestone[] = [
         name: "Jafarbek Ulmasov",
         role: "Co-President",
         linkedin: "https://www.linkedin.com/in/ulmasovjafarbek/",
-        picture: "/team/no.png",
+        picture: "/team/jafar.jpg",
       },
       {
         name: "Guangzhi (Allen) Su",

@@ -50,7 +50,7 @@ const teamYears: TeamYear[] = [
       {
         name: "Wenxin Xu",
         role: "Treasurer",
-        picture: "/team/no.png",
+        picture: "/team/wenxin.jpg",
       },
     ],
   },
@@ -147,6 +147,14 @@ const teamYears: TeamYear[] = [
         picture: "/team/hank.jpg",
       },
       {
+        name: "Tianrui Gu",
+        role: "Core Member",
+        major: "Applied Mathematics and Computer Science",
+        email: "tg297@duke.edu",
+        linkedin: tianruiLinkedIn,
+        picture: "/team/tianrui.jpg",
+      },
+      {
         name: "Bilguun Dugarsuren",
         role: "Core Member",
         major: "Applied Mathematics and Computer Science",
@@ -210,7 +218,7 @@ const teamYears: TeamYear[] = [
         role: "Co-President and Co-Founder",
         major: "Data Science",
         linkedin: "https://www.linkedin.com/in/ulmasovjafarbek/",
-        picture: "/team/no.png",
+        picture: "/team/jafar.jpg",
       },
       {
         name: "Guangzhi (Allen) Su",
@@ -289,28 +297,30 @@ export default function Team() {
       <div
         role="tablist"
         aria-label="Team by academic year"
-        className="mb-10 flex gap-2 overflow-x-auto rounded-xl border bg-muted/40 p-2"
+        className="mb-10 overflow-x-auto rounded-xl border bg-muted/40 p-2"
       >
-        {teamYears.map((teamYear) => {
-          const isActive = teamYear.label === activeYear;
+        <div className="mx-auto flex w-max gap-2">
+          {teamYears.map((teamYear) => {
+            const isActive = teamYear.label === activeYear;
 
-          return (
-            <button
-              key={teamYear.label}
-              type="button"
-              role="tab"
-              aria-selected={isActive}
-              onClick={() => setActiveYear(teamYear.label)}
-              className={`shrink-0 rounded-lg px-4 py-2 text-sm font-semibold transition-colors ${
-                isActive
-                  ? "bg-[var(--dark-green)] text-white shadow-sm"
-                  : "text-muted-foreground hover:bg-background hover:text-foreground"
-              }`}
-            >
-              {teamYear.label}
-            </button>
-          );
-        })}
+            return (
+              <button
+                key={teamYear.label}
+                type="button"
+                role="tab"
+                aria-selected={isActive}
+                onClick={() => setActiveYear(teamYear.label)}
+                className={`shrink-0 rounded-lg px-4 py-2 text-sm font-semibold transition-colors ${
+                  isActive
+                    ? "bg-[var(--dark-green)] text-white shadow-sm"
+                    : "text-muted-foreground hover:bg-background hover:text-foreground"
+                }`}
+              >
+                {teamYear.label}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       <div
