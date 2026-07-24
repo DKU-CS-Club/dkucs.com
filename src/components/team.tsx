@@ -38,18 +38,21 @@ const teamYears: TeamYear[] = [
         name: "Kurtis Kwan",
         role: "Vice President",
         major: "Applied Mathematics and Computer Science",
-        email: "kurtis.kwan [at] duke.edu",
+        email: "kurtis.kwan@duke.edu",
         linkedin: "https://www.linkedin.com/in/kurtis-kwan/",
         picture: "/team/kurtis.jpeg",
       },
       {
         name: "Yichen (Eason) Shen",
         role: "Director of Operations",
+        email: "ys479@duke.edu",
+        linkedin: "https://www.linkedin.com/in/yichen-shen-9088363b8",
         picture: "/team/eason.jpg",
       },
       {
         name: "Wenxin Xu",
         role: "Treasurer",
+        email: "wx97@duke.edu",
         picture: "/team/wenxin.jpg",
       },
     ],
@@ -61,7 +64,7 @@ const teamYears: TeamYear[] = [
         name: "Anar Nyambayar",
         role: "Co-President",
         major: "Applied Mathematics and Computer Science",
-        email: "anar.nyambayar [at] duke.edu",
+        email: "anar.nyambayar@duke.edu",
         linkedin: "https://www.linkedin.com/in/anar-n/",
         picture: "/team/anar.png",
       },
@@ -69,7 +72,7 @@ const teamYears: TeamYear[] = [
         name: "Yanpei (Yolanda) Yu",
         role: "Co-President",
         major: "Data Science",
-        email: "yy475 [at] duke.edu",
+        email: "yy475@duke.edu",
         linkedin: "https://www.linkedin.com/in/yanpei-yu/",
         picture: "/team/yanpei.png",
       },
@@ -77,7 +80,7 @@ const teamYears: TeamYear[] = [
         name: "Avidikhuu Altangerel",
         role: "Treasurer",
         major: "Applied Mathematics and Computer Science",
-        email: "aa846 [at] duke.edu",
+        email: "aa846@duke.edu",
         linkedin: "https://www.linkedin.com/in/avidikhuu/",
         picture: "/team/avidi.png",
       },
@@ -85,7 +88,7 @@ const teamYears: TeamYear[] = [
         name: "Yushan (Kimberly) Sun",
         role: "Secretary",
         major: "Applied Mathematics",
-        email: "ys477 [at] duke.edu",
+        email: "ys477@duke.edu",
         linkedin: "https://www.linkedin.com/in/yushan-sun-487b69385",
         picture: "/team/kimberly.jpg",
       },
@@ -93,7 +96,7 @@ const teamYears: TeamYear[] = [
         name: "Ximing (Shelly) Yu",
         role: "Director of Communications",
         major: "Computation and Design / Computer Science",
-        email: "xy170 [at] duke.edu",
+        email: "xy170@duke.edu",
         linkedin: "https://www.linkedin.com/in/ximing-333109342/",
         picture: "/team/shelly.jpg",
       },
@@ -101,7 +104,7 @@ const teamYears: TeamYear[] = [
         name: "Yichen (Elaine) Wu",
         role: "Director of Communications II",
         major: "Applied Mathematics",
-        email: "yw738 [at] duke.edu",
+        email: "yw738@duke.edu",
         linkedin: "https://www.linkedin.com/in/艺琛-吴-46682a373/",
         picture: "/team/elaine.jpg",
       },
@@ -109,7 +112,7 @@ const teamYears: TeamYear[] = [
         name: "Zuohang (Anthony) Liu",
         role: "Director of Operations",
         major: "Applied Mathematics and Computer Science",
-        email: "zl429 [at] duke.edu",
+        email: "zl429@duke.edu",
         linkedin:
           "https://www.linkedin.com/in/zhuohang-anthony-liu-刘卓航-9357b5362",
         picture: "/team/anthony.png",
@@ -118,7 +121,7 @@ const teamYears: TeamYear[] = [
         name: "Temuulen Enkhtamir",
         role: "Director of Operations II",
         major: "Applied Mathematics and Computer Science",
-        email: "temuulen.enkhtamir [at] dukekunshan.edu.cn",
+        email: "temuulen.enkhtamir@dukekunshan.edu.cn",
         linkedin: "https://www.linkedin.com/in/e-temuulen/",
         picture: "/team/temka.jpeg",
       },
@@ -126,7 +129,7 @@ const teamYears: TeamYear[] = [
         name: "Bouchra Daddaoui",
         role: "Director of Software",
         major: "Applied Mathematics and Computer Science",
-        email: "bouchra.daddaoui [at] dukekunshan.edu.cn",
+        email: "bouchra.daddaoui@dukekunshan.edu.cn",
         linkedin: "https://www.linkedin.com/in/bouchra-daddaoui-24a8a322b/",
         picture: "/team/bouchra.png",
       },
@@ -134,7 +137,7 @@ const teamYears: TeamYear[] = [
         name: "Guangzhi (Allen) Su",
         role: "Co-Founder and Student Advisor",
         major: "Computer Science",
-        email: "gs285 [at] duke.edu",
+        email: "gs285@duke.edu",
         linkedin: guangzhiLinkedIn,
         picture: "/team/allen.png",
       },
@@ -142,7 +145,7 @@ const teamYears: TeamYear[] = [
         name: "Zhonghan (Hank) Dai",
         role: "Operations",
         major: "Applied Mathematics and Computer Science",
-        email: "zd73 [at] duke.edu",
+        email: "zd73@duke.edu",
         linkedin: "https://www.linkedin.com/in/中瀚-戴-212968385",
         picture: "/team/hank.jpg",
       },
@@ -257,12 +260,7 @@ function MemberCard({ member }: { member: TeamMember }) {
       )}
       <div className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm">
         {member.email && (
-          <a
-            href={`mailto:${member.email.replace(" [at] ", "@")}`}
-            className="text-[var(--dark-green)] hover:underline"
-          >
-            Email
-          </a>
+          <span className="text-[var(--dark-green)]">{member.email}</span>
         )}
         {member.linkedin && (
           <a
