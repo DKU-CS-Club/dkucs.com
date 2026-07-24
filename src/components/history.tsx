@@ -18,8 +18,7 @@ const founders: Person[] = [
   {
     name: "Guangzhi (Allen) Su",
     role: "Co-Founder",
-    linkedin:
-      "https://www.linkedin.com/in/allen-guangzhi-su-%E8%8B%8F%E5%B9%BF%E6%99%BA-613070244/?originalSubdomain=cn",
+    linkedin: "https://www.linkedin.com/in/guangzhi-su?trk=blended-typeahead",
     picture: "/team/allen.png",
   },
   {
@@ -45,15 +44,14 @@ const clubHistory: Milestone[] = [
     leadership: [
       {
         name: "Jafarbek Ulmasov",
-        role: "President",
+        role: "Co-President",
         linkedin: "https://www.linkedin.com/in/ulmasovjafarbek/",
         picture: "/team/no.png",
       },
       {
         name: "Guangzhi (Allen) Su",
-        role: "Co-Founder",
-        linkedin:
-          "https://www.linkedin.com/in/allen-guangzhi-su-%E8%8B%8F%E5%B9%BF%E6%99%BA-613070244/?originalSubdomain=cn",
+        role: "Co-President",
+        linkedin: "https://www.linkedin.com/in/guangzhi-su?trk=blended-typeahead",
         picture: "/team/allen.png",
       },
     ],
@@ -66,15 +64,14 @@ const clubHistory: Milestone[] = [
     leadership: [
       {
         name: "Sardor Akhmedjonov",
-        role: "President",
+        role: "Co-President",
         linkedin: "https://www.linkedin.com/in/sardorakhmedjonov/",
         picture: "/team/sardor.png",
       },
       {
         name: "Guangzhi (Allen) Su",
-        role: "Vice President",
-        linkedin:
-          "https://www.linkedin.com/in/allen-guangzhi-su-%E8%8B%8F%E5%B9%BF%E6%99%BA-613070244/?originalSubdomain=cn",
+        role: "Co-President",
+        linkedin: "https://www.linkedin.com/in/guangzhi-su?trk=blended-typeahead",
         picture: "/team/allen.png",
       },
     ],
@@ -88,8 +85,7 @@ const clubHistory: Milestone[] = [
       {
         name: "Guangzhi (Allen) Su",
         role: "President",
-        linkedin:
-          "https://www.linkedin.com/in/allen-guangzhi-su-%E8%8B%8F%E5%B9%BF%E6%99%BA-613070244/?originalSubdomain=cn",
+        linkedin: "https://www.linkedin.com/in/guangzhi-su?trk=blended-typeahead",
         picture: "/team/allen.png",
       },
     ],
@@ -102,13 +98,13 @@ const clubHistory: Milestone[] = [
     leadership: [
       {
         name: "Anar Nyambayar",
-        role: "President",
+        role: "Co-President",
         linkedin: "https://www.linkedin.com/in/anar-n/",
         picture: "/team/anar.png",
       },
       {
         name: "Yanpei (Yolanda) Yu",
-        role: "Vice President",
+        role: "Co-President",
         linkedin: "https://www.linkedin.com/in/yanpei-yu/",
         picture: "/team/yanpei.png",
       },
@@ -155,6 +151,9 @@ function PersonCard({ person }: { person: Person }) {
         <span className="block text-sm font-medium">{person.name}</span>
         <span className="block text-xs text-muted-foreground">
           {person.role}
+        </span>
+        <span className="mt-1 block text-xs font-medium text-[var(--dark-blue)]">
+          LinkedIn ↗
         </span>
       </span>
     </a>
