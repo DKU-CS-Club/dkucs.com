@@ -158,6 +158,27 @@ const teamYears: TeamYear[] = [
         picture: "/team/tianrui.jpg",
       },
       {
+        name: "Kurtis Kwan",
+        role: "Core Member",
+        major: "Applied Mathematics and Computer Science",
+        email: "kurtis.kwan@duke.edu",
+        linkedin: "https://www.linkedin.com/in/kurtis-kwan/",
+        picture: "/team/kurtis.jpeg",
+      },
+      {
+        name: "Yichen (Eason) Shen",
+        role: "Core Member",
+        email: "ys479@duke.edu",
+        linkedin: "https://www.linkedin.com/in/yichen-shen-9088363b8",
+        picture: "/team/eason.jpg",
+      },
+      {
+        name: "Wenxin Xu",
+        role: "Core Member",
+        email: "wx97@duke.edu",
+        picture: "/team/wenxin.jpg",
+      },
+      {
         name: "Bilguun Dugarsuren",
         role: "Core Member",
         major: "Applied Mathematics and Computer Science",
