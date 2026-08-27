@@ -5,6 +5,14 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+const categoryLabels: Record<string, string> = {
+  hackdku: "HackDKU",
+  lecture: "Lecture",
+  workshop: "Workshop",
+  "info session": "Info Session",
+  other: "Other",
+};
+
 export const metadata: Metadata = {
   title: "Events",
 };
@@ -38,6 +46,11 @@ export default function BlogPage() {
                 </div>
                         )}
 
+              {blog.category && (
+                <span className="inline-block w-fit rounded-full border border-border/60 bg-muted px-2.5 py-0.5 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                  {categoryLabels[blog.category] ?? blog.category}
+                </span>
+              )}
 
               <h2 className="text-xl font-extrabold text-primary">
                 {blog.title}
