@@ -37,11 +37,32 @@ const slides: Slide[] = [
 		alt: "Students working through the night at the HackDKU hackathon",
 	},
 	{
-		src: "/images/blog/waic2026/kunlun-booth-tour.webp",
+		src: "/images/blog/hackdku.webp",
+		eyebrow: "HackDKU 2024",
+		title: "Where First Builds Begin",
+		href: "/blog/hackdku2024",
+		alt: "Teams presenting projects at HackDKU 2024",
+	},
+	{
+		src: "/images/blog/waic2026/kunlun-supernode.webp",
 		eyebrow: "WAIC 2026 · Compute",
 		title: "Inside the Supernode",
 		href: "/blog/waic-2026-field-trip",
-		alt: "DKU CS Club students at the Kunlun booth during WAIC 2026",
+		alt: "DKU CS Club students touring the Kunlun supernode at WAIC 2026",
+	},
+	{
+		src: "/images/blog/waic2026/kimi.webp",
+		eyebrow: "WAIC 2026 · Consumer AI",
+		title: "The Assistant in Your Pocket",
+		href: "/blog/waic-2026-field-trip",
+		alt: "DKU CS Club students at the Moonshot Kimi booth during WAIC 2026",
+	},
+	{
+		src: "/images/blog/waic2026/industrial-ai.webp",
+		eyebrow: "WAIC 2026 · Industry",
+		title: "Intelligence on the Line",
+		href: "/blog/waic-2026-field-trip",
+		alt: "An industrial AI exhibit toured by DKU CS Club students at WAIC 2026",
 	},
 	{
 		src: "/images/blog/dic/kickoff.jpg",
@@ -52,7 +73,7 @@ const slides: Slide[] = [
 	},
 ];
 
-const AUTOPLAY_MS = 6000;
+const AUTOPLAY_MS = 3000;
 
 export function PhotoShowcase() {
 	const [index, setIndex] = useState(0);

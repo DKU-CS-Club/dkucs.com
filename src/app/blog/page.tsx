@@ -16,7 +16,7 @@ export default function BlogPage() {
 				new Date(b.date).getTime() - new Date(a.date).getTime(),
 		)
 		.map((blog) => ({
-			slug: blog.slug,
+			slug: blog.slugAsParams,
 			title: blog.title,
 			date: blog.date,
 			category: blog.category ?? "other",
