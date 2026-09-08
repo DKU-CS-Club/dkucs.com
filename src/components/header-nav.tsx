@@ -15,11 +15,13 @@ export default function HeaderNav() {
 						key={item.label + item.path}
 						href={item.path}
 						className={cn(
-							" font-normal hover:text-primary transition-colors flex items-center",
-							`/${segment}` === item.path ? "text-primary" : "text-primary/80",
+							"flex items-center text-xs font-medium uppercase tracking-[0.14em] transition-colors",
+							`/${segment}` === item.path
+								? "text-primary"
+								: "text-muted-foreground hover:text-primary",
 						)}
 					>
-						<item.icon className="mr-2 size-4" />
+						<item.icon className="mr-1.5 size-3.5 opacity-70" />
 						<span>{item.label}</span>
 					</Link>
 				))}

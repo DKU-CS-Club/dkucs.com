@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import localFont from "next/font/local";
+import { Playfair_Display } from "next/font/google";
 // import { Lexend } from "next/font/google";
 // import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -49,6 +50,12 @@ const fontCode = localFont({
 	variable: "--font-code",
 });
 
+const fontDisplay = Playfair_Display({
+	subsets: ["latin"],
+	variable: "--font-display",
+	display: "swap",
+});
+
 export default function RootLayout({
 	children,
 }: Readonly<{
@@ -61,6 +68,7 @@ export default function RootLayout({
 					"min-h-screen antialiased font-inter bg-background",
 					// lexend.variable,
 					fontCode.variable,
+					fontDisplay.variable,
 				)}
 			>
 				<ThemeProvider

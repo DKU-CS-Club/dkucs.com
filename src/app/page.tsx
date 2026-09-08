@@ -1,40 +1,33 @@
-// import Splash from "@/components/splash";
 import Socials from "@/components/socials";
 import { History } from "@/components/history";
-import { TeamBanner } from "@/components/teambanner";
-// import { buttonVariants } from "@/components/ui/button";
-// import { siteConfig } from "@/config/site";
-// import { cn } from "@/lib/utils";
-// import Link from "next/link";
+import { PhotoShowcase } from "@/components/photo-showcase";
 
 export default function Home() {
-  return (
-    <>
-      <TeamBanner />
-      <section className="space-y-6 pb-8 md:pb-12 md:pt-10 lg:py-4 mt-10 mb-10">
-        <div className="container mt-6 flex max-w-5xl flex-col items-center gap-4 xl:mt-0 px-10">
-          <div className="flex w-full max-w-2xl flex-col items-start gap-4 text-left sm:text-left">
-            <header className="text-3xl font-extrabold text-left">
-              Who are we?
-            </header>
-          </div>
-          <p className=" max-w-2xl text-left leading-normal text-muted-foreground sm:leading-8">
-            At DKU, our computer science club is more than just coding. We’re a
-            vibrant, multidisciplinary community, passionate about pushing the
-            boundaries of innovation. We organize annual hackathons (HackDKU),
-            speaker sessions with industry experts, workshops focusing on
-            specific technology and field trips to tech companies. Dive into a
-            pool of multidisciplinary talents, share ideas, and foster
-            innovation that goes beyond the classroom.
-          </p>
-          <History />
-          <div className="flex w-full max-w-2xl flex-col items-start gap-4 text-left sm:text-left">
-            <header className="text-3xl font-extrabold text-left mt-10">
-              <Socials />
-            </header>
-          </div>
-        </div>
-      </section>
-    </>
-  );
+	return (
+		<>
+			<PhotoShowcase />
+			<section className="container mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-24">
+				<p className="eyebrow text-[#9a7b2f] dark:text-[#c6a459]">The club</p>
+				<h1 className="mt-4 text-4xl font-semibold tracking-tight text-primary md:text-5xl">
+					Who are we?
+				</h1>
+				<p className="mt-6 max-w-2xl text-left leading-relaxed text-muted-foreground sm:leading-8">
+					At DKU, our computer science club is more than just coding.
+					We’re a vibrant, multidisciplinary community, passionate about
+					pushing the boundaries of innovation. We organize annual
+					hackathons (HackDKU), speaker sessions with industry experts,
+					workshops focusing on specific technology and field trips to
+					tech companies. Dive into a pool of multidisciplinary talents,
+					share ideas, and foster innovation that goes beyond the
+					classroom.
+				</p>
+			</section>
+			<div className="container mx-auto max-w-5xl px-6 md:px-10">
+				<History />
+			</div>
+			<div className="container mx-auto max-w-5xl px-6 pb-24 pt-4 md:px-10">
+				<Socials />
+			</div>
+		</>
+	);
 }

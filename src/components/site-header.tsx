@@ -11,8 +11,8 @@ import Image from "next/image";
 export default function SiteHeader() {
 	const [isMobileOpen, setIsMobileOpen] = useState(false);
 	return (
-		<header className="sticky top-0 z-40 flex w-full items-center justify-between  bg-gradient-to-b from-white/70 to-transparent dark:from-black/70 p-4 px-8 text-primary backdrop-blur-lg mt-3 mb-3">
-			<div className=" container flex h-12 max-w-screen-2xl items-center justify-between">
+		<header className="sticky top-0 z-40 flex w-full items-center justify-between border-b border-border/60 bg-background/80 px-4 text-primary backdrop-blur-md">
+			<div className="container flex h-16 max-w-screen-2xl items-center justify-between">
 				<div className="flex items-center space-x-3">
 					<Link
 						href="/"
@@ -61,7 +61,7 @@ export default function SiteHeader() {
 					<HeaderNav />
 					<Button
 						variant="ghost"
-						className="p-0 dark:text-white text-black hover:bg-transparent hover:text-white md:hidden"
+						className="p-0 text-foreground hover:bg-transparent hover:text-primary md:hidden"
 						onClick={() => setIsMobileOpen(!isMobileOpen)}
 					>
 						<>
