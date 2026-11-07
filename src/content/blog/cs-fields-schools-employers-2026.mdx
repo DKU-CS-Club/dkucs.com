@@ -2,7 +2,7 @@
 title: "CS Fields, Schools and Employers: A Sharing"
 date: "2026-10-23"
 image: "/images/blog/cs-fields-2026/title.webp"
-description: "A recap of the club's 23 October 2026 session: nineteen computing directions in five groups, the graduate programmes behind them, the employers they lead to, and a conversation with DKU alumnus Allen Guangzhi Su."
+description: "A recap of the club's 23 October 2026 session: nineteen computing directions in five groups, presented block by block, the graduate programmes behind them, the employers they lead to, and a conversation with DKU alumnus Allen Guangzhi Su."
 author: "DKU Computer Science Club"
 category: "info session"
 ---
@@ -27,9 +27,119 @@ The first part of the session was a field map. The nineteen directions were sort
 
 Each direction received two pages. The first was a card: a one-sentence definition, the areas the field is actually made of, the job titles it leads to, and examples of employers. The second answered a different question — what the work involves — in four concrete tasks, from preparing data and a baseline in machine learning to making sure a payment retry does not charge twice in fintech.
 
-![The FinTech direction card](/images/blog/cs-fields-2026/fintech.webp)
-
 Each group closed with a page of master's programmes: Carnegie Mellon, Stanford, ETH Zurich, Oxford, UC Berkeley, Duke and others, with a note on what kind of degree each one is. Two appendices, kept out of the main flow, list the leading research groups and the venues where work in each field is published.
+
+## The field map, block by block
+
+The map was presented by seven club members, each taking a run of consecutive directions. What follows is every block in the order it was given, with the card that opened it.
+
+### Fanqi Shi
+
+**Machine Learning · Computer Vision · Robotics & Autonomous Systems**
+
+![Fanqi Shi presenting Computer Vision](/images/blog/cs-fields-2026/speakers/fanqi-shi.webp)
+
+Fanqi Shi took the first three directions in AI & Learning.
+
+**Machine learning** is learning patterns from data or experience and testing whether the model still works on samples it has never seen; generalisation is the point, not fit on the training set. The card listed deep learning, optimisation, learning theory, probabilistic models, generative models and representation learning as its key areas. The work page followed one model from a baseline through training and tuning one change at a time, error analysis and ablations to find whether the limit is data, capacity or optimisation, and deployment with monitoring for distribution shift.
+
+**Computer vision** recognises content, position, shape and change in images, video and 3D scenes under different lighting, viewpoints and occlusion. The work starts with the dataset — class balance, lighting, viewpoints and rare cases decide what the model can learn — then fine-tunes a pretrained backbone, evaluates per scenario because average accuracy hides failure on small or occluded objects, and deploys under latency and hardware constraints.
+
+**Robotics and autonomous systems** perceive the environment, plan an action and carry it out in the real world, with feedback closing the loop. Its key areas run from perception and estimation to planning and control, manipulation and locomotion, embodied AI and autonomous vehicles. The work page covered state estimation from noisy sensors, trajectory planning and control, contact under forces that are hard to model, and the transfer from simulation to hardware.
+
+![The Machine Learning card](/images/blog/cs-fields-2026/slides/a1-machine-learning.webp)
+
+### Zihan Zhang
+
+**Natural Language Processing & Large Language Models · Trustworthy AI, Safety & Ethics**
+
+![Zihan Zhang presenting Trustworthy AI, Safety & Ethics](/images/blog/cs-fields-2026/speakers/zihan-zhang.webp)
+
+Zihan Zhang closed the group with its other two directions.
+
+**NLP and large language models** generate, retrieve, translate and act on language — pretrained on large text corpora, then adapted to a task. The work page was blunt about where the effort sits: instruction and preference data shape behaviour, and most teams never pretrain from scratch; retrieval grounds answers in evidence; evaluation covers the whole application, including safety, latency and cost; and batching, caching and quantisation decide the price of each answer.
+
+**Trustworthy AI, safety and ethics** asks whether a system is reliable in its real context, not only accurate on a test set, and whether it can be audited, challenged and governed. Its key areas are interpretability, fairness and bias, robustness, safety and alignment, privacy, and governance and standards. The work is to report error rates for each population rather than the average, test whether an explanation is faithful, stress-test and red-team against perturbations, jailbreaks and misuse, and carry risk assessment, human oversight and incident response across the lifecycle.
+
+![The Natural Language Processing & LLMs card](/images/blog/cs-fields-2026/slides/a2-nlp-llms.webp)
+
+### Yichen Shen
+
+**Data Science & Analytics · Data Engineering & Data Systems**
+
+![Yichen Shen presenting Data Science & Analytics](/images/blog/cs-fields-2026/speakers/yichen-shen.webp)
+
+Yichen Shen took the two directions in Data Science & Engineering.
+
+**Data science and analytics** turns data into inference, prediction and a decision; statistics supplies the reasoning about uncertainty and computing the machinery. The work page begins with the estimand — the population and the decision the result will inform — then the measurement design, an effect with an error bar, and a report that carries the assumptions and the uncertainty to the person who acts on it.
+
+**Data engineering** is the systems that collect, store, query, move and serve data — reliably, at volume, and at a cost someone will pay. The work is the schema, storage layout and file format chosen for the read pattern; a pipeline with quality checks and lineage for every table; transactions, recovery and exactly-once semantics under retries and failure; and a workload report behind any speed claim.
+
+![The Data Science & Analytics card](/images/blog/cs-fields-2026/slides/b1-data-science.webp)
+
+### He Yi
+
+**Computer Systems · Software Engineering & Programming Languages · Security & Privacy · AI Infrastructure**
+
+![He Yi presenting Computer Systems](/images/blog/cs-fields-2026/speakers/he-yi.webp)
+
+He Yi took all four directions in Systems & Engineering.
+
+**Computer systems** covers how hardware, operating systems, networks and storage work together to run applications, from one machine to a datacentre. The work page was a warning against guessing: profile first, because the bottleneck is usually memory, I/O or the network rather than the code that looks slow; choose the abstraction the system can promise; implement against the hardware; then validate under failure and tail latency at the scale the system will actually see.
+
+**Software engineering and programming languages** is how software is specified, built, tested and maintained, and how languages make that possible or hard. The work is to state a property through a type, an invariant or a formal specification, build the analysis or tool that checks it, fuzz for the failures the analysis missed, and match the evidence to the claim.
+
+**Security and privacy** protects computation, communication and personal data against adversaries, starting from a threat model that states what the attacker can observe, control or compromise. The work is to find the weakness through fuzzing, static analysis, symbolic execution or review, build the defence from isolation, privilege separation and cryptography, then measure it and disclose through coordinated disclosure.
+
+**AI infrastructure** is the systems that train, serve and operate models at scale — cluster scheduling, distributed training, interconnect and inference serving. Its key areas include hardware co-design and platform operations. The work is to profile every layer, parallelise training with communication overlapped with compute, serve within a latency and cost budget, and operate with checkpointing, elastic restart and cost per token reported.
+
+![The Computer Systems card](/images/blog/cs-fields-2026/slides/c1-computer-systems.webp)
+
+### Hanyue Deng
+
+**Theory of Computing & Algorithms · Optimisation & Operations Research**
+
+![Hanyue Deng presenting Theory of Computing & Algorithms](/images/blog/cs-fields-2026/speakers/hanyue-deng.webp)
+
+Hanyue Deng took the first two directions in Applied Mathematics & Algorithms.
+
+**Theory of computing and algorithms** asks what can be computed at all, how fast and with how much memory, and what must be proved before an answer counts. Its key areas run from algorithms and complexity theory to approximation and randomness, algorithmic game theory, and online and streaming algorithms. The work page kept correctness and cost apart: a correctness argument and a running-time or lower bound, each proved under a stated model, then tested against real instances.
+
+**Optimisation and operations research** finds a good or optimal decision under an objective and constraints — continuous or discrete, with a bound on quality. The work is to turn a messy requirement into decision variables, constraints and an objective; match the method to the structure; report a dual bound or optimality gap rather than just a feasible answer; and check the solution against the assumptions and requirements the model left out.
+
+![The Theory of Computing & Algorithms card](/images/blog/cs-fields-2026/slides/d1-theory.webp)
+
+### Haohong Yu
+
+**Scientific Computing & Numerical Analysis · Quantum Computing & Information**
+
+![Haohong Yu presenting Quantum Computing & Information](/images/blog/cs-fields-2026/speakers/haohong-yu.webp)
+
+Haohong Yu took the last two directions in the group.
+
+**Scientific computing and numerical analysis** makes mathematical models computable in finite precision, and analyses the approximation, round-off and stability that follow. The work is to discretise the model, choose the solver and preconditioner for the matrix structure, analyse the error rather than compare a few step sizes, and run at scale across the memory hierarchy and GPU kernels.
+
+**Quantum computing and information** uses quantum states and operations as computational resources, where any advantage depends on the task, model and hardware. Its key areas run from quantum algorithms and error correction to quantum hardware, quantum information theory and post-quantum security. The work is to state the model behind a claimed advantage, design the algorithm, error-correcting code or control sequence, count qubits and depth plus the classical cost of preparing data and decoding, and validate on a simulator before a device.
+
+![The Scientific Computing & Numerical Analysis card](/images/blog/cs-fields-2026/slides/d3-scientific-computing.webp)
+
+### Wenxin Xu
+
+**FinTech · Quantitative Finance · Human-Computer Interaction · Computational Biology & Bioinformatics**
+
+![Wenxin Xu presenting Quantitative Finance](/images/blog/cs-fields-2026/speakers/wenxin-xu.webp)
+
+Wenxin Xu closed the field map with the four directions in Interdisciplinary & Applied.
+
+**FinTech** combines finance's domain knowledge with computer science: the systems that move, lend, insure and account for money. The work page set the standard as exactness, auditability and availability — ledgers and settlement that reconcile under retries and partial failure, risk checks inside a latency budget, append-only records and reproducible reports, and reporting to the deadline rather than as a back-office afterthought.
+
+**Quantitative finance** turns uncertain market prices into estimates of value, risk and a decision — pricing, hedging and position sizing. Its key areas are derivatives pricing and hedging, risk measurement, portfolio construction, numerical methods, optimisation under constraints and statistical learning for markets. The work is to write the model and its assumptions down, price the same product two ways against a closed-form value, measure value at risk, expected shortfall and stress scenarios, and backtest with transaction costs before trading.
+
+**Human-computer interaction** designs, builds and evaluates technology around people, asking whether they can learn it, trust it and recover when it fails. The work starts from what the user is trying to complete, prototypes at the cheapest fidelity that answers the question, tests with a few participants on a real task, and judges against task completion, time on task, error rate or a standardised score.
+
+**Computational biology and bioinformatics** uses computation to find patterns in biological data and make predictions that experiments can then test. The work is to form the question, process sequencing, structure and image data with quality control and batch effects handled, predict with the uncertainty reported, and validate independently in another cohort or in the lab.
+
+![The FinTech card](/images/blog/cs-fields-2026/fintech.webp)
 
 ## The second half: a conversation, not a lecture
 
@@ -37,15 +147,17 @@ The field map answers what the directions are. It does not answer how a student 
 
 Allen graduated from DKU in 2026 in **Applied Mathematics and Computational Science (Computer Science)**. He was founding president of the DKU Finance and CS Club, worked as a research assistant in Duke's Center for Computational Evolutionary Intelligence, and interned at TikTok as an AI product manager. He is now in Carnegie Mellon's MS in Artificial Intelligence and Innovation, having also held offers from NYU's fully funded Data Science PhD, CMU's Electrical and Computer Engineering programme, Northwestern's MS in AI, and Cornell's information systems programme with a health-technology focus.
 
-![Allen Guangzhi Su speaking at the session](/images/blog/cs-fields-2026/allen.webp)
+![Tianrui Gu hosting the conversation with Allen Guangzhi Su](/images/blog/cs-fields-2026/speakers/allen-conversation.webp)
 
-The questions were grouped in three rounds.
+The conversation was hosted by **Tianrui Gu** and joined by Allen over video. The questions were grouped in three rounds.
 
 **Choosing a programme.** Why this master's, and how a student should compare offers that differ in funding, length and research access.
 
 **Getting in.** How an undergraduate should think about internships — whether it is too early to start, whether one is necessary at all, and which fields treat the internship as the entry point rather than a bonus. He also spoke about the two research projects he completed as an undergraduate: what undergraduate research is for, and whether a first- or second-year should get the coursework right first or reach out and learn by doing. That led to the practical side of joining a group — how to build a working relationship with a professor, and how to join a lab without prior research experience.
 
 **Everything outside the syllabus.** The last round left the curriculum behind. Do programming languages, algorithms, low-level systems and mathematics still matter as AI systems get stronger? Should a CS student build a portfolio and contribute to open source, and how much does either count for jobs and for research? And what did organising club activities give him — whether leadership, communication and working with people, the skills CS students often neglect, matter more in the age of AI.
+
+![Allen Guangzhi Su](/images/blog/cs-fields-2026/allen.webp)
 
 ## What the session left students with
 
